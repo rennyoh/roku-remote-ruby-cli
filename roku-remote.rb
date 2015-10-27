@@ -37,6 +37,10 @@ def show_single_key
     do_key_press "right"
   when "\e[D"
     do_key_press "left"
+  when "*"
+    do_key_press "info"
+  when "\e[H"
+    do_key_press "home"
   when "\u0003"
     puts "Bye!"
     exit 0
